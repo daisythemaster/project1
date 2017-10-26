@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        
+    </head>
+
+    <body>
+        
+        <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="topnav-right"><a href="sign-up.html">Sign Up</a></li>
+            <li class="topnav-right"><a href="loginpage.html">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        
+        <div class="row">
+        
+            <div class="col-7">
+                <img src="f3.jpg">
+
+            </div>
+
+            <div class="col-5">
+                <div class="wordblock">
+                    <form>
+                        <div class="half">
+                            Search for news:<br>
+                            <input placeholder="Search for" type="text"><br>
+                        </div>
+                        <div class="half">
+                            Categories:<br>
+                            <input placeholder="browse"type="text">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="row">
+        
+            <div class="col-7">
+                <h3>The Science Behind Baking Your Ideal Chocolate Chip Cookie</h3>
+                <p>We've taken our cues from a few spots: a bioengineering grad student named Kendra Nyberg, who co-taught a class at the University of California, Los Angeles called Science and Food, and chef and cookbook author Tessa Arias, who writes about cookie science on her site, Handle the Heat.</p>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="box">
+                                <img src="f1.jpg">
+                                <a href=""> Six best ways to make herb cheese</a><br>
+                                <label>Recipe</label>
+                            </div>
+
+                        </div>
+                        <div class="col-4">
+                            <div class="box">
+                                    <img src="f2.jpg">
+                                    <a href=""> Why do women bake raspberry pies?</a><br>
+                                    <label>Food Science</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="box">
+                                    <img src="f4.jpg">
+                                    <a href="">Blueberry cappuccino with mint leaf </a><br>
+                                    <label>Recipe</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-5">
+                <div class="spotlight">
+                    <h1 class="spotlight"> Food Spotlight</h1>
+                    <ul>
+                        <li><a href=""> Toxic microwave food?  </a></li>
+                        <li><a href=""> Fresh Black Bean Salad </a></li>
+                        <li><a href=""> St. Louis Soup Dumplings by Private Kitchen Is Opening Today </a></li>
+                        <li><a href=""> FARMERS MARKET ASPARAGUS & POTATO PIZZA </a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            </div>
+        
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                    /* change topnave to topnav.responsive */
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        
+        </script>
+    </body>
+
+</html>

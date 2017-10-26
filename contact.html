@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        
+    </head>
+
+    <body>
+        
+        <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="topnav-right"><a href="sign-up.html">Sign Up</a></li>
+            <li class="topnav-right"><a href="loginpage.html">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        
+        <h1>Contact us!</h1>
+        
+        <img src="f2.jpg">
+        <h4>
+        Address: 4501 37th Ave Ne Seattle, WA 98105 
+        </h4>
+        <h4>
+        Phone: +1.206.237.5468 
+        </h4>
+        <h4>
+        Email: daisywhome@gmail.com
+        </h4>
+        <h4>
+        For general inquiries, contact us via email by using the email form. 
+        </h4>
+        
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                    /* change topnave to topnav.responsive */
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        
+        </script>
+    </body>
+
+</html>

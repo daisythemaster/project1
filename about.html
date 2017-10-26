@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        
+    </head>
+
+    <body>
+    
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="topnav-right"><a href="sign-up.html">Sign Up</a></li>
+            <li class="topnav-right"><a href="loginpage.html">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        
+        
+        <h1>You deserve to be fit and healthy forever. </h1>
+        <h2>Over 200,000 kinds of food whatever you like presented to you with its function and exact calories to help you balance your diet. </h2>
+        
+        <button class="SignUpButton">Sign up for free</button>
+        
+        
+        <img class="container" src="about.jpg">
+        
+        <h1>What can you use Calory for?</h1>
+        
+            <div class="row">
+                <div class="col-6">
+        
+                    <h3>200,000+ kinds of food for your diet</h3>
+
+                    <h2 class="leftwords">With a huge database of food information and hundreds more healthy tips, chances are here everyday</h2>
+
+                    <h3>Find the most suitable plan for you to lose weights and keep healthy everyday or use our products to easily increase your life quality</h3>
+
+                    <button>See today's new product</button>
+                </div>
+                
+                
+                <div class="col-6 picture">
+                    <img src="f4.jpg" width="200" height="50">
+                    <img src="f5.jpg" width="200" height="50">
+                    <img src="f3.jpg" width="200" height="50"><img src="f1.jpg" width="200" height="50"><img src="f2.jpg" width="200" height="50">
+                    <img src="f6.jpg" width="200" height="50">
+                </div>
+            </div>
+        
+        
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                    /* change topnave to topnav.responsive */
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        
+        </script>
+     
+    </body>
+
+</html>
+

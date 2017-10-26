@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Calory - know the calory for food</title>
+        <link rel="stylesheet" href = "style.css">
+        <script type="text/javascript" src="learn.js"></script>
+    </head>
+    <body>
+        <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="topnav-right"><a href="sign-up.html">Sign Up</a></li>
+            <li class="topnav-right"><a href="loginpage.html">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Calory</h1>
+        <h2>Wanna find out calories in your food? just search it!</h2>
+        
+        <div class="container">
+            <div class="row">
+                        <div class="searchBar">
+                            <input class="searchbar" type="text" placeholder="Food name example: apple">
+                        </div>
+                
+                    <button class="button">Search</button>
+            </div>
+        </div>
+            
+        
+        <footer class = "footsy">
+            <div class = "row">
+                <div class="col-3 footerStack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-3 footerStack">
+                    <h1>Products</h1>
+                    <ul>
+                        <li>Computers</li>
+                        <li>iPads</li>
+                        <li>iPhones</li>
+                    </ul>
+                </div>
+                <div class="col-3 footerStack">
+                    <h1>Learn More</h1>
+                    <ul>
+                        <li>Lose Weights</li>
+                        <li>Eat healthy</li>
+                        <li>Keep skinny</li>
+                    </ul>
+                </div>
+                <div class="col-3 footerStack">
+                    <h1>Support</h1>
+                    <ul>
+                        <li>Help</li>
+                        <li>QA</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                    /* change topnave to topnav.responsive */
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
